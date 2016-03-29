@@ -15,6 +15,8 @@ CREATE TABLE users (
     date_joined timestamp  NOT NULL
 );
 
+--insert into users values (1,'xdesxqa0','2016-09-12',False,'irvi','ferran','homet','ferran@gmail.com',True,'2016-09-12');
+
 CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     timestamp timestamp  NOT NULL,
@@ -28,6 +30,8 @@ CREATE TABLE posts (
     owner_id bigint NOT NULL,
     is_deleted boolean NOT NULL
 );
+
+--insert into posts values ( 1,'2016-09-12','2016-09-12','/var/tmp','hey!','+34678106143','2016-09-12',True,False,1,False);
 
 --
 ALTER TABLE posts
